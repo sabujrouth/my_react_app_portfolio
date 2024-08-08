@@ -1,14 +1,16 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+import { Navbar, Container } from "react-bootstrap";
 
-function BasicExample() {
+export const NavBar = () => {
     return (
         <Navbar expand="lg" className="bg-body-tertiary">
             <Container>
-                <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Brand href="#home">
+                    <img src={''} alt="Logo"/>
+                </Navbar.Brand>
+                <Navbar.Toggle aria-controls="basic-navbar-nav"> 
+
+                    
+                </Navbar.Toggle>
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
                         <Nav.Link href="#home">Home</Nav.Link>
@@ -28,7 +30,5 @@ function BasicExample() {
                 </Navbar.Collapse>
             </Container>
         </Navbar>
-    );
+    )
 }
-
-export default BasicExample;
