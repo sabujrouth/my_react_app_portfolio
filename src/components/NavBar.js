@@ -18,7 +18,8 @@ export const NavBar = () => {
                     </Nav>
                     <span className="navbar-text">
                         <div className="social-icon">
-                            <a href="#"><img src="" alt="" /></a>
+                            <a href="#"><img src={''} alt="" /></a>
+                            <a href="#"><img src={''} alt="" /></a>
                         </div>
 
                     </span>
